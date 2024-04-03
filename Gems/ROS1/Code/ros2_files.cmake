@@ -115,8 +115,8 @@ set(FILES
         Source/RobotControl/ROS2RobotControlComponent.cpp
         Source/RobotControl/ROS2RobotControlComponent.h
         Source/RobotControl/Twist/TwistSubscriptionHandler.cpp
-        Source/RobotImporter/ROS2RobotImporterSystemComponent.cpp
-        Source/RobotImporter/ROS2RobotImporterSystemComponent.h
+        # Source/RobotImporter/ROS2RobotImporterSystemComponent.cpp
+        # Source/RobotImporter/ROS2RobotImporterSystemComponent.h
         Source/ROS2ModuleInterface.h
         Source/Sensor/Events/PhysicsBasedSource.cpp
         Source/Sensor/Events/TickBasedSource.cpp

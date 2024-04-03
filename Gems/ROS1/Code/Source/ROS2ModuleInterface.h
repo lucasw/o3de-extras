@@ -37,7 +37,7 @@
 #include <RobotControl/Controllers/RigidBodyController/RigidBodyTwistControlComponent.h>
 #include <RobotControl/Controllers/SkidSteeringController/SkidSteeringControlComponent.h>
 #include <RobotControl/ROS2RobotControlComponent.h>
-#include <RobotImporter/ROS2RobotImporterSystemComponent.h>
+// #include <RobotImporter/ROS2RobotImporterSystemComponent.h>
 #include <SimulationUtils/FollowingCameraComponent.h>
 #include <Spawner/ROS2SpawnPointComponent.h>
 #include <Spawner/ROS2SpawnerComponent.h>
@@ -65,7 +65,7 @@ namespace ROS2
                     ROS2SensorComponentBase<TickBasedSource>::CreateDescriptor(),
                     ROS2SensorComponentBase<PhysicsBasedSource>::CreateDescriptor(),
                     LidarRegistrarSystemComponent::CreateDescriptor(),
-                    ROS2RobotImporterSystemComponent::CreateDescriptor(),
+                    // ROS2RobotImporterSystemComponent::CreateDescriptor(),
                     ROS2ImuSensorComponent::CreateDescriptor(),
                     ROS2GNSSSensorComponent::CreateDescriptor(),
                     ROS2LidarSensorComponent::CreateDescriptor(),
@@ -108,7 +108,7 @@ namespace ROS2
                 azrtti_typeid<ROS2SystemComponent>(),
                 azrtti_typeid<ROS2SystemCameraComponent>(),
                 azrtti_typeid<LidarRegistrarSystemComponent>(),
-                azrtti_typeid<ROS2RobotImporterSystemComponent>(),
+                // azrtti_typeid<ROS2RobotImporterSystemComponent>(),
             };
         }
     };

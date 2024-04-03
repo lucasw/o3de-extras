@@ -16,8 +16,8 @@
 #include <QtCore/qglobal.h>
 #include <ROS2/Frame/ROS2FrameEditorComponent.h>
 #include <ROS2ModuleInterface.h>
-#include <RobotImporter/ROS2RobotImporterEditorSystemComponent.h>
-#include <SdfAssetBuilder/SdfAssetBuilderSystemComponent.h>
+// #include <RobotImporter/ROS2RobotImporterEditorSystemComponent.h>
+// #include <SdfAssetBuilder/SdfAssetBuilderSystemComponent.h>
 #include <Spawner/ROS2SpawnPointEditorComponent.h>
 #include <Spawner/ROS2SpawnerEditorComponent.h>
 #include <SystemComponents/ROS2EditorSystemComponent.h>
@@ -45,11 +45,11 @@ namespace ROS2
                 { ROS2EditorSystemComponent::CreateDescriptor(),
                   ROS2EditorCameraSystemComponent::CreateDescriptor(),
                   LidarRegistrarEditorSystemComponent::CreateDescriptor(),
-                  ROS2RobotImporterEditorSystemComponent::CreateDescriptor(),
+                  // ROS2RobotImporterEditorSystemComponent::CreateDescriptor(),
                   ROS2CameraSensorEditorComponent::CreateDescriptor(),
                   ROS2SpawnerEditorComponent::CreateDescriptor(),
                   ROS2SpawnPointEditorComponent::CreateDescriptor(),
-                  SdfAssetBuilderSystemComponent::CreateDescriptor(),
+                  // SdfAssetBuilderSystemComponent::CreateDescriptor(),
                   JointsManipulationEditorComponent::CreateDescriptor(),
                   JointsPositionsEditorComponent::CreateDescriptor(),
                   GeoReferenceLevelEditorComponent::CreateDescriptor(),
@@ -61,8 +61,10 @@ namespace ROS2
         {
             return AZ::ComponentTypeList{
                 azrtti_typeid<ROS2EditorSystemComponent>(),           azrtti_typeid<ROS2EditorCameraSystemComponent>(),
-                azrtti_typeid<LidarRegistrarEditorSystemComponent>(), azrtti_typeid<ROS2RobotImporterEditorSystemComponent>(),
-                azrtti_typeid<SdfAssetBuilderSystemComponent>(),      azrtti_typeid<ROS2FrameSystemComponent>(),
+                azrtti_typeid<LidarRegistrarEditorSystemComponent>(),
+                // azrtti_typeid<ROS2RobotImporterEditorSystemComponent>(),
+                // azrtti_typeid<SdfAssetBuilderSystemComponent>(),
+                azrtti_typeid<ROS2FrameSystemComponent>(),
             };
         }
     };
