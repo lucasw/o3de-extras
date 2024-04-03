@@ -40,14 +40,14 @@ set(FILES
         Source/Georeference/GeoreferenceStructures.cpp
         Source/Georeference/GeoreferenceLevelComponent.cpp
         Source/Georeference/GeoreferenceLevelComponent.h
-        Source/Gripper/GripperActionServer.cpp
-        Source/Gripper/GripperActionServer.h
-        Source/Gripper/GripperActionServerComponent.cpp
-        Source/Gripper/GripperActionServerComponent.h
-        Source/Gripper/VacuumGripperComponent.h
-        Source/Gripper/VacuumGripperComponent.cpp
-        Source/Gripper/FingerGripperComponent.h
-        Source/Gripper/FingerGripperComponent.cpp
+        # Source/Gripper/GripperActionServer.cpp
+        # Source/Gripper/GripperActionServer.h
+        # Source/Gripper/GripperActionServerComponent.cpp
+        # Source/Gripper/GripperActionServerComponent.h
+        # Source/Gripper/VacuumGripperComponent.h
+        # Source/Gripper/VacuumGripperComponent.cpp
+        # Source/Gripper/FingerGripperComponent.h
+        # Source/Gripper/FingerGripperComponent.cpp
         Source/Georeference/GNSSFormatConversions.cpp
         Source/Georeference/GNSSFormatConversions.h
         Source/GNSS/ROS2GNSSSensorComponent.cpp

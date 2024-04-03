@@ -15,9 +15,9 @@
 #include <ContactSensor/ROS2ContactSensorComponent.h>
 #include <GNSS/ROS2GNSSSensorComponent.h>
 #include <Georeference/GeoreferenceLevelComponent.h>
-#include <Gripper/FingerGripperComponent.h>
-#include <Gripper/GripperActionServerComponent.h>
-#include <Gripper/VacuumGripperComponent.h>
+// #include <Gripper/FingerGripperComponent.h>
+// #include <Gripper/GripperActionServerComponent.h>
+// #include <Gripper/VacuumGripperComponent.h>
 #include <Imu/ROS2ImuSensorComponent.h>
 #include <Lidar/LidarRegistrarSystemComponent.h>
 #include <Lidar/ROS2Lidar2DSensorComponent.h>
@@ -93,9 +93,9 @@ namespace ROS2
                     JointsPIDControllerComponent::CreateDescriptor(),
                     JointsTrajectoryComponent::CreateDescriptor(),
                     PidMotorControllerComponent::CreateDescriptor(),
-                    GripperActionServerComponent::CreateDescriptor(),
-                    VacuumGripperComponent::CreateDescriptor(),
-                    FingerGripperComponent::CreateDescriptor(),
+                    // GripperActionServerComponent::CreateDescriptor(),
+                    // VacuumGripperComponent::CreateDescriptor(),
+                    // FingerGripperComponent::CreateDescriptor(),
                     ROS2ContactSensorComponent::CreateDescriptor(),
                     FollowingCameraComponent::CreateDescriptor(),
                     GeoReferenceLevelComponent::CreateDescriptor(),
