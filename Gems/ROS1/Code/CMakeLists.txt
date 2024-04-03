@@ -37,9 +37,9 @@ endif()
 
 # Add a custom target to always check during build if sourced and cached distributions match.
 add_custom_target(
-    ROS2DistributionCheck ALL
+    ${gem_name}DistributionCheck ALL
     COMMENT "Checking if sourced ROS 2 distribution matches with the configuration"
-    COMMAND ${CMAKE_COMMAND} -DROS_DISTRO=${ROS_DISTRO} -P ${CMAKE_CURRENT_SOURCE_DIR}/checkROS2Distribution.cmake
+    COMMAND ${CMAKE_COMMAND} -DROS_DISTRO=${ROS_DISTRO} -P ${CMAKE_CURRENT_SOURCE_DIR}/check${gem_name}Distribution.cmake
 )
 
 # Add the ROS2.Static target
@@ -196,7 +196,7 @@ if(PAL_TRAIT_BUILD_TESTS_SUPPORTED)
         
         # integration test for URDF importer
         ly_add_target(
-            NAME ROS2.Frame.Tests ${PAL_TRAIT_TEST_TARGET_TYPE}
+            NAME ${gem_name}.Frame.Tests ${PAL_TRAIT_TEST_TARGET_TYPE}
                 NAMESPACE Gem
             FILES_CMAKE
                 frame_test_files.cmake
@@ -218,7 +218,7 @@ if(PAL_TRAIT_BUILD_TESTS_SUPPORTED)
         )
 
         ly_add_googletest(
-                NAME Gem::ROS2.Frame.Tests
+                NAME Gem::${gem_name}.Frame.Tests
         )
 
     endif()
